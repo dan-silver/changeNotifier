@@ -42,3 +42,22 @@ gem 'jbuilder', '~> 1.2'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'figaro'
+gem 'haml-rails'
+gem 'less-rails'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem 'sendgrid'
+gem 'simple_form', '>= 3.0.0.rc'
+gem 'therubyracer', :platform=>:ruby
+gem 'thin'
+gem 'twitter-bootstrap-rails'
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
+  gem 'html2haml'
+  gem 'quiet_assets'
+end
+
