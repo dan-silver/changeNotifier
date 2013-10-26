@@ -3,7 +3,7 @@ class NotificationController < ApplicationController
   @@client = Twilio::REST::Client.new(ENV['TWILIO_SID'], ENV['TWILIO_TOKEN'])
 
   def notify
-    email_status = NotifyMailer.notify_email('rzendacott@gmail.com', 'Ryan', 'http://google.com', 'google', 'goggle').deliver
+    email_status = NotifyMailer.notify_email(params[:email],  params[:name], params[:website], params[:original_content], params[:new_content]).deliver
     text_status = send_twilio_notification(params[:phone_number])
     render json: { email: true, sms: true}
   end
