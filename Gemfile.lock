@@ -167,6 +167,10 @@ GEM
       polyglot (>= 0.3.1)
     turbolinks (1.3.0)
       coffee-rails
+    twilio-ruby (3.11.4)
+      builder (>= 2.1.2)
+      jwt (>= 0.1.2)
+      multi_json (>= 1.3.0)
     twitter-bootstrap-rails (2.2.8)
       actionpack (>= 3.1)
       execjs
@@ -201,5 +205,6 @@ DEPENDENCIES
   therubyracer
   thin
   turbolinks
+  twilio-ruby
   twitter-bootstrap-rails
   uglifier (>= 1.3.0)
