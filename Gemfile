@@ -19,6 +19,7 @@ gem 'thin'
 gem 'twitter-bootstrap-rails'
 gem 'twilio-ruby'
 gem 'simplify'
+gem 'dwolla-ruby'
 group :development, :test do
   gem 'sqlite3'
 end
