@@ -6,4 +6,5 @@ ComputeMidwest::Application.routes.draw do
   get '/signout' => 'sessions#destroy', :as => :signout
   get '/auth/failure' => 'sessions#failure'
   post '/notify' => 'notification#notify'
+  post '/simplify' => 'notification#simplify'
 end

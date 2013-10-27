@@ -18,6 +18,7 @@ gem 'therubyracer', :platform=>:ruby
 gem 'thin'
 gem 'twitter-bootstrap-rails'
 gem 'twilio-ruby'
+gem 'simplify'
 group :development, :test do
   gem 'sqlite3'
 end
