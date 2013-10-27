@@ -6,8 +6,10 @@ class NotificationController < ApplicationController
     if ENV['send'] == 'do it!!!'
       email_status = NotifyMailer.notify_email(params[:email],  params[:name], params[:website], params[:original_content], params[:new_content]).deliver
       text_status = send_twilio_notification(params[:phone_number])
+      render json: { email: true, sms: true}
+    else
+      render json: {status: 'not sent because of config vars'}
     end
-    render json: { email: true, sms: true}
   end
 
   def send_twilio_notification(number = '+14179880783')
