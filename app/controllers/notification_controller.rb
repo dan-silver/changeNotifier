@@ -4,12 +4,12 @@ class NotificationController < ApplicationController
 
 
   def simplify
-    puts 'doing it!'
+    puts 'doing it!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
     payment = Simplify::Payment.create({
-      "token" => params[:token],
+      "token" => params[:simplifyToken],
       "amount" => params[:amount],
       "currency" => "USD",
-      "description" => "#{params[:name]} purchased."
+      "description" => "Someone purchased."
     })
 
     if payment['paymentStatus'] == 'APPROVED'
