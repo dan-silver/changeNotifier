@@ -4,6 +4,7 @@ class NotificationController < ApplicationController
 
 
   def simplify
+    puts 'doing it!'
     payment = Simplify::Payment.create({
       "token" => params[:token],
       "amount" => params[:amount],
