@@ -2,7 +2,6 @@ class NotificationController < ApplicationController
 
   @@client = Twilio::REST::Client.new(ENV['TWILIO_SID'], ENV['TWILIO_TOKEN'])
 
-
   def simplify
     puts 'doing it!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
     payment = Simplify::Payment.create({
